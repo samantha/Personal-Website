@@ -1,0 +1,11 @@
+{
+  "name": "shangsan",
+  "version": "1.0.0",
+  "description": "Responsive portfolio website",
+  "main": "index.js",
+  "scripts": {
+    "sass": "node-sass -w scss/ -o dist/css/ --recursive"
+  },
+  "author": "Samantha Hangsan",
+  "license": "MIT"
+}
