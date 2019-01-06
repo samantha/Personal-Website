@@ -1,41 +1,26 @@
-// Select Document Object Model (DOM) Items
-// menu button, nav list, etc...
+// Get DOM Elements
+const modal = document.querySelector('#my-modal');
+const modalImg = document.querySelector('#modal-image');
+const closeBtn = document.querySelector('.close');
 
-const menuBtn = document.querySelector('.menu-btn');
-const menu = document.querySelector('.menu');
-const menuNav = document.querySelector('.menu-nav');
-const menuBranding = document.querySelector('.menu-branding');
-const navItems = document.querySelectorAll('.nav-item');
+// Events
+modalImg.addEventListener('click', openModal);
+closeBtn.addEventListener('click', closeModal);
+window.addEventListener('click', outsideClick);
 
-// Set Intial State of Menu
-let showMenu = false;
+// Open
+function openModal() {
+  modal.style.display = 'block';
+}
 
-// Event Listener
-menuBtn.addEventListener('click', toggleMenu);
+// Close
+function closeModal() {
+  modal.style.display = 'none';
+}
 
-function toggleMenu()
-{
-	if(!showMenu)
-	{
-		menuBtn.classList.add('close');
-		menu.classList.add('show');
-		menuNav.classList.add('show');
-		menuBranding.classList.add('show');
-		navItems.forEach(item => item.classList.add('show'));
-
-		// Set Menu state
-		showMenu = true;
-	}
-
-	else
-	{
-		menuBtn.classList.remove('close');
-		menu.classList.remove('show');
-		menuNav.classList.remove('show');
-		menuBranding.classList.remove('show');
-		navItems.forEach(item => item.classList.remove('show'));
-
-		// Set Menu state
-		showMenu = false;
-	}
+// Close If Outside Click
+function outsideClick(e) {
+  if (e.target == modal) {
+    modal.style.display = 'none';
+  }
 }
