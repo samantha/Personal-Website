@@ -54,7 +54,7 @@ header .banner {
 
 header .banner-text { width: 100%; }
 header .banner-text h1 {
-   font: 90px/1.1em 'opensans-bold', sans-serif;
+   font: 8vw 'opensans-bold', sans-serif;
    color: #fff;
    letter-spacing: -2px;
    margin: 0 auto 18px auto;
@@ -78,6 +78,19 @@ header .banner-text hr {
    border-color: rgba(150, 150, 150, .1);
 }
 
+@media only screen and (max-width: 700px) {
+  header.responsive-headline {
+    width: 50%;
+    margin: 6px 0;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  header.responsive-headline {
+    width: 100%;
+  }
+}
+
 /* header social links */
 header .social {
    margin: 24px 0;
@@ -90,7 +103,10 @@ header .social li {
    margin: 0 15px;
    padding: 0;
 }
-header .social li a { color: #fff; }
+header .social li a {
+  color: #fff;
+  font-size: 3vw;
+}
 header .social li a:hover { color: #6A84A7; }
 
 /* scrolldown link */
@@ -401,7 +417,7 @@ ul#nav li a:hover  { color: #6A84A7; }
 
 @media only screen and (max-width: 700px) {
   #portfolio .responsive {
-    width: 49.99999%;
+    width: 50%;
     margin: 6px 0;
   }
 }
