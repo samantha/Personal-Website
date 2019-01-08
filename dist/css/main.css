@@ -222,7 +222,7 @@ ul#nav li a:hover  { color: #6A84A7; }
    line-height: 30px;
    color: #e8e8e8;
    margin-left: 15px;
-   margin-left: 15px;
+   margin-right: 15px;
 }
 #about .portrait {
   margin-left: 15px;
@@ -233,42 +233,43 @@ ul#nav li a:hover  { color: #6A84A7; }
    height: 200px;
    border-radius: 100%;
 }
+#about .row {
+  display: block;
+  margin: auto;
+}
+
 #about .contact-details { width: 41.66667%; }
 #about .download {
-  margin-left: auto;
-  margin-right: auto;
-  width: 60%;
-  padding-top: 6px;
+
 }
-#about .main-col { padding-right: 5%; }
+#about .main-col {
+  padding-left: 5%;
+  padding-right: 5%;
+}
 
 #about .download .button {
-  margin-left: auto;
-  margin-right: auto;
   font-family: 'opensans-semibold', sans-serif;
+  text-align: center;
   display: block;
   border-radius: 10px;
   padding: 15px;
-  text-align: center;
   background:#3369ff;
   box-shadow:inset 0 -0.6em 0 -0.35em rgba(0,0,0,0.17);
   font-weight: bold;
   width: 250px;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 #about .download .button:hover {
   cursor: pointer;
- /* display: inline-block;*/
- /* position: relative;*/
- /* transition: 0.5s;*/
-   background: #fff;
-   color: #2B2B2B;
+  background: #fff;
+  color: #2B2B2B;
 }
 #about .download .button i {
-
-   font-size: 18px;
+  font-size: 18px;
 }
-
 
 /* ------------------------------------------------------------------ */
 /* d. Resume Section
