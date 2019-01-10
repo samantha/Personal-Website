@@ -181,7 +181,6 @@ ul#nav li a {
   text-decoration: none;
   text-align: left;
   color: #fff;
-
   -webkit-transition: color .2s ease-in-out;
   -moz-transition: color .2s ease-in-out;
   -o-transition: color .2s ease-in-out;
@@ -435,8 +434,8 @@ ul#nav li a:hover  { color: #6A84A7; }
 }
 
 #portfolio .modal-content{
-  margin: 10% auto;
-  padding: 20px;
+  margin: auto;
+  padding: 20px 0;
   width: 50%;
 }
 
@@ -472,10 +471,39 @@ ul#nav li a:hover  { color: #6A84A7; }
 
 #portfolio .modal-footer {
   background: black;
-  padding: 0.5px;
   color: #fff;
-  text-align: center;
+  display: inline-block;
+  width: 100%;
+  vertical-align: middle;
 }
+
+#portfolio .modal-footer .skills{
+  margin-left: 5px;
+  float: left;
+  padding: 5px;
+  font: 14px/14px 'opensans-light', sans-serif;
+}
+
+#portfolio .modal-footer .source{
+  margin-right: 5px;
+  float: right;
+  padding: 5px;
+}
+
+#portfolio .modal-footer a{
+  font: 14px/14px 'opensans-light', sans-serif;
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+#portfolio .modal-footer a:hover { color: #6A84A7; }
+
+
+
+/*#portfolio .modal-footer p{
+
+}*/
 
 #portfolio .close{
   color: #ccc;
