@@ -270,62 +270,62 @@ ul#nav li a:hover  { color: #6A84A7; }
 
 #resume {
   background: #fff;
-  padding-top: 90px;
+  padding-top: 35px;
   padding-bottom: 10px;
   overflow: hidden;
 }
 
-#resume a, #resume a:visited  { color: #6A84A7; }
-#resume a:hover, #resume a:focus { color: #313131; }
+#resume a, #resume a:visited  {
+  text-decoration: none;
+  color: #333; }
+#resume a:hover, #resume a:focus { color: #6A84A7; }
 
 #resume h1 {
-  font: 18px/24px 'opensans-bold', sans-serif;
+  font: 18px 'opensans-bold', sans-serif;
   text-transform: uppercase;
   letter-spacing: 1px;
 }
 #resume h1 span {
-  border-bottom: 3px solid #000024;
+  border-bottom: 1.5px solid #939499;
   padding-bottom: 6px;
 }
 #resume h3 {
-  font: 25px/30px 'opensans-bold', sans-serif;
+  font: 15px 'opensans-bold', sans-serif;
+  letter-spacing: 1px;
   display: inline;
+  color: #333;
 }
 
 #resume .header-col {
   padding-top: 5px;
   margin-left: 15px;
+  color: #939499;
 }
+
+#resume .header-col li{
+  display: inline-block;
+}
+
+
 #resume .main-col {
-  padding-right: 30%;
-  margin-left: 15px;
+  margin-left: 35px;
+  color: #333;
 }
 
 .education, .work {
   margin-bottom:  5px;
-  padding-bottom: 20px;
+  padding-bottom: 5px;
 }
-#resume .info {
-  font: 16px/24px 'librebaskerville-italic', serif;
-  color: #333;
+#resume .main-col .term {
+  font: 14px 'opensans', sans-serif;
+  color: #939499;
   margin-bottom: 0px;
-  margin-top: 9px;
+  margin-top: 0px;
 }
 
-#resume .location {
-  margin-bottom: 4px;
-  font: 'librebaskerville', sans-serif;
-  color: #6A84A7
-}
-
-#resume .info span {
-  margin-right: 5px;
-  margin-left: 5px;
-}
-#resume .date {
-  font: 15px/24px 'opensans-regular', sans-serif;
-  margin-top: 6px;
-  text-align: right;
+#resume .main-col .term li{
+  display: inline-block;
+  margin: 0 5px;
 }
 
 /* ------------------------------------------------------------------ */
