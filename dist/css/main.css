@@ -304,6 +304,7 @@ ul#nav li a:hover  { color: #6A84A7; }
 
 #resume .header-col li{
   display: inline-block;
+  list-style: none;
 }
 
 
