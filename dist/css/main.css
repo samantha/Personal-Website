@@ -196,7 +196,7 @@ ul#nav li a:hover  { color: #6A84A7; }
 /* ------------------------------------------------------------------ */
 
 #about {
-  background: #333;
+  background: #56445D;
   padding-top: 65px;
   padding-bottom: 50px;
   overflow: hidden;
@@ -333,7 +333,7 @@ ul#nav li a:hover  { color: #6A84A7; }
 /* e. Portfolio Section
 /* ------------------------------------------------------------------ */
 #portfolio {
-  background: #333;
+  background: #56445D;
   padding-top: 80px;
   padding-bottom: 0px;
   height: 100vh;
