@@ -335,15 +335,61 @@ ul#nav li a:hover  { color: #6A84A7; }
 #portfolio {
   background: #25274D;
   padding-top: 80px;
-  padding-bottom: 0px;
-  height: 100vh;
+  padding-bottom: 35px;
+/*  height: 100vh;*/
 }
+
+#portfolio .container{
+  margin: 0 auto;
+  max-width: 1200px;
+}
+
+#portfolio .grid{
+  align-items: center;
+  justify-content: center;
+}
+
+#portfolio .cell{
+    margin: 1rem;
+}
+
+#portfolio .cell img{
+  display: block;
+  max-width: 100%;
+  background-color: #011627;
+  border: 3px solid #000024;
+  padding: 5px;
+}
+
+#portfolio .cell:hover img {
+  transition: .5s ease;
+  border: 6px solid #000024;
+  cursor: pointer;
+}
+
+@media screen and (min-width: 600px) {
+  .grid {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+  }
+  .cell {
+    width: 50%;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .cell {
+    width: 25%;
+  }
+}
+
 #portfolio h1 {
   font: 24px/24px 'opensans-semibold', sans-serif;
   text-transform: uppercase;
   letter-spacing: 1px;
   text-align: center;
-  margin-bottom: 48px;
+  margin-bottom: 28px;
   color: #fff;
 }
 
@@ -351,37 +397,9 @@ ul#nav li a:hover  { color: #6A84A7; }
   font: 18px/24px 'opensans-semibold', sans-serif;
   text-transform: uppercase;
   letter-spacing: 1px;
-  text-align: right;
-  padding-right: 5px;
-  color: #fff;
-}
-
-#portfolio .gallery
-{
-  background-color: #011627;
-  padding-bottom: 5px;
-  border: 3px solid #000024;
-}
-
-#portfolio .gallery:hover {
-  border: 3px solid #000024;
-  cursor: pointer;
-}
-
-#portfolio .gallery img {
-  width: 100%;
-  height: auto;
-}
-
-#portfolio .gallery:hover img {
-  width: 100%;
-  height: auto;
-  transition: .5s ease;
-  border: 3px solid #000024;
-}
-
-#portfolio .name {
   text-align: center;
+  padding-top: 2px;
+  color: #fff;
 }
 
 #portfolio .desc {
@@ -398,26 +416,7 @@ ul#nav li a:hover  { color: #6A84A7; }
 
 #portfolio * {
   box-sizing: border-box;
-}
-
-#portfolio .responsive {
-  padding: 0 6px;
-  margin: auto;
-  width: 24.99999%;
-
-}
-
-@media only screen and (max-width: 700px) {
-  #portfolio .responsive {
-    width: 50%;
-    margin: 6px 0;
-  }
-}
-
-@media only screen and (max-width: 500px) {
-  #portfolio .responsive {
-    width: 100%;
-  }
+  margin: 0;
 }
 
 /* Portfolio Modal */
