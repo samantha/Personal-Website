@@ -1,7 +1,7 @@
 // TODO Add a couple lines about each project
 const data = [
     {
-        title: "Daily49er.com",
+        title: "Daily Forty-Niner",
         subtitle: "2015 BVP Hackathon",
         link: "https://daily49er.com",
         image: "/images/projects/daily49er.png",
